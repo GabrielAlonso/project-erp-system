@@ -1,3 +1,5 @@
+import { ContentComponent } from './content/content.component';
+import { BreadcrumbComponent } from './components/template/breadcrumb/breadcrumb.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,10 +16,13 @@ import { RolesComponent } from './roles/roles.component';
 import { ScreensComponent } from './screens/screens.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { MaterialModule } from './material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    BreadcrumbComponent,
     FooterComponent,
     MenuComponent,
     UsersComponent,
@@ -25,12 +30,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ClientsComponent,
     RolesComponent,
     ScreensComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

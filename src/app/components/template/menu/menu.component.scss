@@ -1,0 +1,33 @@
+.principal-menu {
+  float: left;
+  width: 15%;
+  height: 86vh;
+  background-color: #ccc;
+  box-shadow: inset -1px 0 0 var(--primary);
+}
+
+.menu-li {
+  margin-bottom: 10px;
+  list-style: none;
+
+}
+
+.menu-item {
+  width: 100%;
+  text-align: left;
+}
+
+ul {
+  padding: 10px;
+}
+
+.search-input-env {
+  width: 100%;
+  padding: 10px;
+}
+
+.input-search {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+}
