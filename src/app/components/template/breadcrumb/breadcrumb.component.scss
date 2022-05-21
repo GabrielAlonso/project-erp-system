@@ -4,6 +4,16 @@
   box-sizing: inherit;
 }
 
+.breadcrumb-content {
+  position: fixed;
+  width: 85%;
+  top: 50px;
+  right: 0;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px #999;
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -12,7 +22,6 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 0 10px 10px;
-  border-bottom: 1px solid var(--primary);
   margin-bottom: 0;
 }
 

@@ -1,9 +1,10 @@
 .principal-menu {
+  position: fixed;
+  top: 50px;
   float: left;
   width: 15%;
-  height: 86vh;
-  background-color: #ccc;
-  box-shadow: inset -1px 0 0 var(--primary);
+  height: 100vh;
+  background-color: #ff8a65;
 }
 
 .menu-li {
@@ -27,7 +28,7 @@ ul {
 }
 
 .input-search {
-  width: 90%;
+  width: 80%;
   border-radius: 5px;
   padding: 8px;
   border: 1px solid var(--primary);

@@ -1,10 +1,20 @@
 <section class="principal-menu">
   <div class="search-input-env">
     <span>Search</span>
-    <input type="search" class="input-search" />
+    <input type="text" class="input-search" />
   </div>
   <div class="example-button-row">
     <ul>
+      <li class="menu-li">
+        <a class="button" routerLink="/">
+          <button mat-raised-button class="menu-item" color="primary">
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >home</mat-icon
+            >
+            Dashboard
+          </button>
+        </a>
+      </li>
       <li class="menu-li">
         <a class="button" routerLink="/users">
           <button mat-raised-button class="menu-item" color="primary">
