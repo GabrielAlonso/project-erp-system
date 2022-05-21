@@ -13,10 +13,18 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.title-dashboard {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 900;
+  padding: 10px;
+}
+
 .content-principal {
   padding: 0 20px;
 }
 
 .content-geral{
+  padding: 20px 0;
   width: 100%;
 }
