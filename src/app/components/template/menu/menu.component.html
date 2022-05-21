@@ -6,28 +6,44 @@
   <div class="example-button-row">
     <ul>
       <li class="menu-li">
-        <button mat-raised-button class="menu-item" color="primary">
-          <mat-icon aria-hidden="false" aria-label="Example group icon"
-            >group</mat-icon
-          >
-          Users
-        </button>
+        <a class="button" routerLink="/users">
+          <button mat-raised-button class="menu-item" color="primary">
+            <mat-icon aria-hidden="false" aria-label="Example group icon"
+              >group</mat-icon
+            >
+            Users
+          </button>
+        </a>
       </li>
       <li class="menu-li">
-        <button mat-raised-button class="menu-item" color="primary">
-          <mat-icon aria-hidden="false" aria-label="Example person icon"
-            >person</mat-icon
-          >
-          Clients
-        </button>
+        <a class="button" routerLink="/roles">
+          <button mat-raised-button class="menu-item" color="primary">
+            <mat-icon aria-hidden="false" aria-label="Example article icon"
+              >article</mat-icon
+            >
+            Roles
+          </button>
+        </a>
       </li>
       <li class="menu-li">
-        <button mat-raised-button class="menu-item" color="primary">
-          <mat-icon aria-hidden="false" aria-label="Example store icon"
-            >store</mat-icon
-          >
-          Products
-        </button>
+        <a class="button" routerLink="/clients">
+          <button mat-raised-button class="menu-item" color="primary">
+            <mat-icon aria-hidden="false" aria-label="Example person icon"
+              >person</mat-icon
+            >
+            Clients
+          </button>
+        </a>
+      </li>
+      <li class="menu-li">
+        <a class="button" routerLink="/products">
+          <button mat-raised-button class="menu-item" color="primary">
+            <mat-icon aria-hidden="false" aria-label="Example store icon"
+              >store</mat-icon
+            >
+            Products
+          </button>
+        </a>
       </li>
     </ul>
   </div>
