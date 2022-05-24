@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dialog',
+  selector: 'app-modal',
   templateUrl: './dialog.component.html',
   styleUrls: ['./dialog.component.scss'],
 })

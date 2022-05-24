@@ -1,4 +1,5 @@
-import { DialogComponent } from './components/template/dialog/dialog.component';
+import { ModalComponent } from './components/template/modal/modal.component';
+import { DialogComponent } from './components/template/dialog/dialog.component'
 import { ContentComponent } from './content/content.component';
 import { BreadcrumbComponent } from './components/template/breadcrumb/breadcrumb.component';
 import { NgModule } from '@angular/core';
@@ -37,6 +38,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     ContentComponent,
     DialogComponent,
+    ModalComponent,
     routingComponents,
   ],
   imports: [
