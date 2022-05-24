@@ -1,3 +1,4 @@
+import { DialogComponent } from './components/template/dialog/dialog.component';
 import { ContentComponent } from './content/content.component';
 import { BreadcrumbComponent } from './components/template/breadcrumb/breadcrumb.component';
 import { NgModule } from '@angular/core';
@@ -17,6 +18,9 @@ import { ScreensComponent } from './screens/screens.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { MaterialModule } from './material.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,12 +36,17 @@ import { MaterialModule } from './material.module';
     ScreensComponent,
     DashboardComponent,
     ContentComponent,
+    DialogComponent,
     routingComponents,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
     MaterialModule,
   ],
   providers: [],

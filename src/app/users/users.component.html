@@ -1,6 +1,10 @@
 <div class="content-principal">
   <h1 class="title-dashboard">Users</h1>
-  <mat-card>A page of users</mat-card>
+  <mat-card>A page of users
+    <button mat-raised-button class="bt-right menu-item" color="primary" (click)="openDialog()">
+      <mat-icon aria-hidden="false" aria-label="Example add icon">add</mat-icon>
+    </button>
+  </mat-card>
   <div class="content-geral">
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)">
