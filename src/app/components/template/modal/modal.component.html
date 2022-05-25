@@ -31,5 +31,5 @@
 </div>
 <div class="env-bottom">
   <button class="bt-modal" mat-raised-button mat-dialog-close color="warn">Cancel</button>
-  <button class="bt-modal" [disabled]="form.invalid" mat-dialog-close mat-raised-button color="primary">Create</button>
+  <button class="bt-modal" [disabled]="form.invalid" (click)="save()" mat-dialog-close mat-raised-button color="primary">Create</button>
 </div>

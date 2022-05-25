@@ -39,7 +39,7 @@ export class UsersComponent implements AfterViewInit {
 
   openDialogDelete() {
     this.dialog.open(DialogComponent, {
-      height: '200px',
+      height: '190px',
       width: '400px',
       data: {
         animal: 'panda',

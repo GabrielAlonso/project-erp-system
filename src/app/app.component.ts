@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
+import { AuthService } from './login/auth.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  constructor() {}
+export class AppComponent implements OnInit {
+  public login: boolean = true;
 
-  public login: boolean = false;
+  constructor(private authService: AuthService) {}
 
-  title = 'project-erp-system';
+  ngOnInit() {
+    this.authService.showMenuEmitter.subscribe(
+      (showMenu) => (this.login = showMenu)
+    );
+  }
 }

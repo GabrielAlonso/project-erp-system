@@ -1,0 +1,28 @@
+.env-top{
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.bt-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--light-right);
+}
+
+.env-bottom{
+  text-align: right;
+  padding-top: 20px;
+}
+
+.bt-modal{
+  position: relative;
+  margin-left: 20px;
+}
+
+.bt-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--light-right);
+}

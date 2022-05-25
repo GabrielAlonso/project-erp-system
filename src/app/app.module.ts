@@ -1,3 +1,4 @@
+import { AuthService } from './login/auth.service';
 import { LoginComponent } from './login/login.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { ModalComponent } from './components/template/modal/modal.component';
@@ -55,7 +56,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,16 @@
-<h1 mat-dialog-title>Delete</h1>
+<div class="env-top">
+  <h1 mat-dialog-title>Delete</h1>
+  <button mat-icon-button mat-dialog-close class="bt-close" color="primary">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<div mat-dialog-content>
+  <div>You can delete this register?</div>
+</div>
+<div class="env-bottom">
+  <button class="bt-modal" mat-raised-button mat-dialog-close color="warn">Cancel</button>
+  <button class="bt-modal" (click)="delete()" mat-dialog-close mat-raised-button color="primary">Delete</button>
+</div>
 
-<button mat-button mat-dialog-close>X</button>
 
 

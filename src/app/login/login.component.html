@@ -7,7 +7,7 @@
       <form [formGroup]="form">
         <mat-form-field class="login-field" appearance="outline">
           <mat-label>Login</mat-label>
-          <input matInput formControlName="login" autocomplete="off" required />
+          <input matInput [(ngModel)]="user.login" formControlName="login" autocomplete="off" required />
           <mat-error *ngIf="form.get('login')?.invalid"
             >Login is required.</mat-error
           >
@@ -17,6 +17,8 @@
           <mat-label>Password</mat-label>
           <input
             matInput
+            [(ngModel)]="user.password"
+            type="password"
             formControlName="password"
             autocomplete="off"
             required
@@ -32,6 +34,8 @@
     <div class="env-bottom">
       <button
         class="bt-modal"
+        type="submit"
+        (click)="login()"
         [disabled]="form.invalid"
         mat-dialog-close
         mat-raised-button
