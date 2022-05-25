@@ -1,13 +1,29 @@
 <mat-toolbar class="header-project" color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
   <span>Automatic - ERP</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with settings icon">
-    <mat-icon>settings</mat-icon>
+
+  <mat-icon style="margin-right: 10px;" matBadge="15" matBadgeColor="warn">email</mat-icon>
+  <!-- Include text description of the icon's meaning for screen-readers -->
+  <span class="cdk-visually-hidden">
+    Example with a home icon with overlaid badge showing the number 15
+  </span>
+
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with settings icon"
+  >
+    <mat-icon
+      ><a style="text-decoration: none; color: #fff" routerLink="/configuration"
+        >settings</a
+      ></mat-icon
+    >
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with logout icon">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with logout icon"
+  >
     <mat-icon>logout</mat-icon>
   </button>
 </mat-toolbar>

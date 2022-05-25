@@ -1,3 +1,4 @@
+import { ConfigurationComponent } from './configuration/configuration.component';
 import { ScreensComponent } from './screens/screens.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'clients', component: ClientsComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'screens', component: ScreensComponent },
+  { path: 'configuration', component: ConfigurationComponent },
 ];
 
 @NgModule({
