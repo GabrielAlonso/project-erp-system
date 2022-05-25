@@ -2,11 +2,31 @@
   <span>Automatic - ERP</span>
   <span class="example-spacer"></span>
 
-  <mat-icon style="margin-right: 10px;" matBadge="15" matBadgeColor="warn">email</mat-icon>
-  <!-- Include text description of the icon's meaning for screen-readers -->
-  <span class="cdk-visually-hidden">
-    Example with a home icon with overlaid badge showing the number 15
-  </span>
+  <button style="margin-right: -10px" mat-button [matMenuTriggerFor]="menu">
+    <mat-icon matBadge="15" matBadgeColor="warn">email</mat-icon>
+    <span class="cdk-visually-hidden"></span>
+  </button>
+  <mat-menu #menu="matMenu">
+    <mat-list>
+      <mat-list-item class="list-item"
+        ><mat-icon class="icon-badge icon-color-error">error</mat-icon> A simple
+        notification message
+        <mat-checkbox class="example-margin icon-check"></mat-checkbox
+      ></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item
+        ><mat-icon class="icon-badge icon-color-ok">check</mat-icon> A simple
+        notification message
+        <mat-checkbox class="example-margin icon-check"></mat-checkbox
+      ></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item
+        ><mat-icon class="icon-badge icon-color-wrn">warning</mat-icon> A simple
+        notification message
+        <mat-checkbox class="example-margin icon-check"></mat-checkbox
+      ></mat-list-item>
+    </mat-list>
+  </mat-menu>
 
   <button
     mat-icon-button

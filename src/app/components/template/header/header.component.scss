@@ -4,5 +4,30 @@
 .header-project {
   position: fixed;
   z-index: 99;
-  height: 50px!important;
+  height: 50px !important;
+}
+
+.icon-badge {
+  position: relative;
+  right: 10px;
+}
+
+.list-item {
+  width: 200px;
+}
+
+.icon-check {
+  margin-left: 10px;
+}
+
+.icon-color-error {
+  color: var(--light-right);
+}
+
+.icon-color-ok {
+  color: var(--light-green);
+}
+
+.icon-color-wrn {
+  color: var(--light-warn);
 }

@@ -5,6 +5,8 @@
   --primary: #9575cd;
   --second: #9fa8da;
   --light-right: #F44;
+  --light-green: #0A0;
+  --light-warn: #AA0;
 }
 
 html,
@@ -14,6 +16,11 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-menu-panel {
+  max-width: 340px!important;
+  padding: 0 20px;
 }
 
 .bt-right{
