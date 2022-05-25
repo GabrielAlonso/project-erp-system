@@ -28,7 +28,7 @@ export class UsersComponent implements AfterViewInit {
 
   openDialog() {
     this.dialog.open(ModalComponent, {
-      height: '500px',
+      height: '430px',
       width: '800px',
       data: {
         title: 'Add',

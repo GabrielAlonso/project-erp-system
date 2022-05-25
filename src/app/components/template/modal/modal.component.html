@@ -1,31 +1,35 @@
-<h1 mat-dialog-title>Add</h1>
-
-<button mat-button mat-dialog-close>X</button>
-
-<div mat-dialog-content>
-  <mat-form-field class="name-field" appearance="outline">
-    <mat-label>Fist Name</mat-label>
-    <input matInput placeholder="Placeholder">
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-
-  <mat-form-field class="name-field" appearance="outline">
-    <mat-label>Last Name</mat-label>
-    <input matInput placeholder="Placeholder">
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-
-  <mat-form-field class="name-field" appearance="outline">
-    <mat-label>Age</mat-label>
-    <input matInput placeholder="Placeholder">
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-
-  <mat-form-field class="name-field" appearance="outline">
-    <mat-label>Outline form field</mat-label>
-    <input matInput placeholder="Placeholder">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
+<div class="env-top">
+  <h1 mat-dialog-title>Add User</h1>
+  <button mat-icon-button mat-dialog-close class="bt-close" color="primary">
+    <mat-icon>close</mat-icon>
+  </button>
 </div>
 
+<div mat-dialog-content>
+  <form [formGroup]="form">
+
+    <mat-form-field class="name-field" appearance="outline">
+      <mat-label>Fist Name</mat-label>
+      <input matInput formControlName="firstName" autocomplete="off" required />
+      <mat-error *ngIf="form.get('firstName')?.invalid">First name is required.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="name-field" appearance="outline">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" autocomplete="off" required />
+      <mat-error *ngIf="form.get('lastName')?.invalid">Last name is required.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="name-field" appearance="outline">
+      <mat-label>Age</mat-label>
+      <input matInput formControlName="age" autocomplete="off" required />
+      <mat-error *ngIf="form.get('age')?.invalid">Age is required.</mat-error>
+    </mat-form-field>
+
+  </form>
+  <mat-divider style="margin-top: 20px"></mat-divider>
+</div>
+<div class="env-bottom">
+  <button class="bt-modal" mat-raised-button mat-dialog-close color="warn">Cancel</button>
+  <button class="bt-modal" [disabled]="form.invalid" mat-dialog-close mat-raised-button color="primary">Create</button>
+</div>

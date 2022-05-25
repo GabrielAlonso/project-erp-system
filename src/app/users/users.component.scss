@@ -14,3 +14,19 @@ table {
   width: 10%;
   text-align: center;
 }
+
+.icon-action {
+  cursor: pointer;
+}
+
+.icon-edit {
+  color: var(--principal);
+}
+
+.icon-read {
+  color: var(--principal);
+}
+
+.icon-delete {
+  color: var(--light-right);
+}
