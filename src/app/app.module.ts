@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { ModalComponent } from './components/template/modal/modal.component';
 import { DialogComponent } from './components/template/dialog/dialog.component'
@@ -41,7 +42,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DialogComponent,
     ModalComponent,
     routingComponents,
-    ConfigurationComponent
+    ConfigurationComponent,
+    LoginComponent
   ],
   imports: [
     FormsModule,

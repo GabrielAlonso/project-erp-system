@@ -1,0 +1,44 @@
+.login-env {
+  background-color: var(--second) ;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.login-logo {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+}
+
+.login-screen {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: column;
+  background-color: #fff;
+  width: 300px;
+  height: 215px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.logo-img {
+  width: 90%;
+  padding: 5%;
+}
+
+.env-bottom {
+  margin: 0 auto;
+}
+
+.login-field, .password-field {
+  width: 100%;
+}

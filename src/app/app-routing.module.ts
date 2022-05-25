@@ -8,9 +8,11 @@ import { UsersComponent } from './users/users.component';
 import { RolesComponent } from './roles/roles.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ProductsComponent } from './products/products.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: LoginComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'users', component: UsersComponent },
   { path: 'roles', component: RolesComponent },
   { path: 'clients', component: ClientsComponent },

@@ -1,5 +1,8 @@
-<app-header></app-header>
-<app-menu></app-menu>
-<app-breadcrumb></app-breadcrumb>
-<app-content></app-content>
-<app-footer></app-footer>
+
+<app-login *ngIf="login"></app-login>
+
+<app-header *ngIf="!login"></app-header>
+<app-menu *ngIf="!login"></app-menu>
+<app-breadcrumb *ngIf="!login"></app-breadcrumb>
+<app-content *ngIf="!login"></app-content>
+<app-footer *ngIf="!login"></app-footer>
