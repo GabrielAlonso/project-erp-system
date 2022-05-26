@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  public login: boolean = true;
+  public login: boolean = false;
 
   constructor(private authService: AuthService) {}
 

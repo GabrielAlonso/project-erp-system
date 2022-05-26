@@ -32,4 +32,8 @@ export class AuthService {
       return false;
     }
   }
+
+  userIsAuthed() {
+    return this.userAuthed;
+  }
 }

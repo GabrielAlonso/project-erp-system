@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/auth.guard';
 import { AuthService } from './login/auth.service';
 import { LoginComponent } from './login/login.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
@@ -17,7 +18,7 @@ import { MenuComponent } from './components/template/menu/menu.component';
 import { UsersComponent } from './users/users.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
-import { RolesComponent } from './roles/roles.component';
+import { RulesComponent } from './rules/rules.component';
 import { ScreensComponent } from './screens/screens.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -36,7 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UsersComponent,
     ProductsComponent,
     ClientsComponent,
-    RolesComponent,
+    RulesComponent,
     ScreensComponent,
     DashboardComponent,
     ContentComponent,
@@ -56,7 +57,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MaterialModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

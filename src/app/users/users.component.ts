@@ -8,10 +8,6 @@ import { DialogComponent } from '../components/template/dialog/dialog.component'
 
 import { ModalComponent } from '../components/template/modal/modal.component';
 
-export interface DialogData {
-  animal: 'panda' | 'unicorn' | 'lion';
-}
-
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
