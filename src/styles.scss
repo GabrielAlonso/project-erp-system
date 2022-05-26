@@ -4,9 +4,9 @@
   --principal: #673ab7;
   --primary: #9575cd;
   --second: #9fa8da;
-  --light-right: #F44;
-  --light-green: #0A0;
-  --light-warn: #AA0;
+  --light-right: #f44;
+  --light-green: #0a0;
+  --light-warn: #aa0;
 }
 
 html,
@@ -18,13 +18,17 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.mat-icon-button {
+  border-radius: 5px !important;
+}
+
 .mat-menu-panel {
-  max-width: 340px!important;
+  max-width: 340px !important;
   padding: 0 20px;
 }
 
-.bt-right{
-  position: absolute!important;
+.bt-right {
+  position: absolute !important;
   right: 12px;
   top: 12px;
 }
@@ -32,7 +36,7 @@ body {
 .title-dashboard {
   text-align: center;
   margin-bottom: 0;
-  font-weight: 900!important;
+  font-weight: 900 !important;
   padding: 20px 0 0 0;
 }
 
@@ -41,7 +45,7 @@ body {
   min-height: 80vh;
 }
 
-.content-geral{
+.content-geral {
   padding: 20px 0;
   width: 100%;
 }
